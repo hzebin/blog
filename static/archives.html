@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  <!--移动端预览设置-->
+  <title>归档</title>
+  <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">  &lt;!&ndash;引入semantic-ui的CDN&ndash;&gt;-->
+  <link rel="stylesheet" href="Semantic-UI/semantic.css">
+  <link rel="stylesheet" href="./css/me.css">
+</head>
+<body>
+
+<!--首页导航条-->
+<nav>
+  <div class="ui inverted segment attached m-padded-tb-mini">  <!--attached取消边框圆角-->
+    <div class="ui container">
+      <div class="ui menu inverted secondary stackable">  <!--stackable可堆叠，可以自适应；mobile reversed下面的文章中，文字跟图片换位置-->
+        <h2 class="ui item header orange">黄泽彬的博客</h2>
+        <a href="#" class="m-item item m-mobile-hide"><i class="home icon"></i>首页</a>
+        <a href="#" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
+        <a href="#" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
+        <a href="#" class="active m-item item m-mobile-hide"><i class="clone icon"></i>归档</a>
+        <a href="#" class="m-item item m-mobile-hide"><i class="info icon"></i>关于我</a>
+
+        <div class="m-item item right m-mobile-hide">
+          <div class="ui icon input">
+            <input type="text" placeholder="输入搜索内容......">
+            <i class="search icon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="ui black button m-right-top m-mobile-show menu toggle">
+      <i class="sidebar icon"></i>
+    </a>
+  </div>
+</nav>
+
+<!--首页中间内容部分-->
+<div class="m-padded-tb-massive">
+  <div class="ui container">
+    <!--header-->
+    <div class="ui segment top attached">
+      <!--详细内容上的标题和几篇文章-->
+      <div class="ui two column grid middle aligned">  <!--middle aligned 垂直居中-->
+        <div class="column">
+          <h3 class="ui header teal">归档</h3>
+        </div>
+        <div class="column right aligned">
+          共 <h2 class="ui header orange m-inline-block">14</h2> 篇博客
+        </div>
+      </div>
+    </div>
+
+    <h2 class="ui header center aligned">2020</h2>
+    <div class="ui vertical menu fluid">
+      <a href="#" class="item">
+        <span>
+          <!--span将文本与图片放在一起，否则一左一右-->
+          <i class="circle teal icon mini"></i>&nbsp;&nbsp;关于刻意练习的记忆
+          <div class="ui basic teal left pointing label mini">09月03日</div>
+        </span>
+        <div class="ui orange label">原创</div>
+      </a>
+    </div>
+
+    <h2 class="ui header center aligned">2016</h2>
+    <div class="ui vertical menu fluid">
+      <a href="#" class="item">
+        <span>
+          <!--span将文本与图片放在一起，否则一左一右-->
+          <i class="circle teal icon mini"></i>&nbsp;&nbsp;关于刻意练习的记忆
+          <div class="ui basic teal left pointing label mini">09月03日</div>
+        </span>
+        <div class="ui orange label">原创</div>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<!--首页底部footer-->
+<footer class="ui segment inverted attached m-padded-tb-massive">
+  <div class="ui container center aligned">  <!--center aligned div中的内容居中-->
+    <div class="ui grid inverted divided stackable">  <!--inverted divided 反色分割线-->
+      <div class="three wide column">
+        <img class="ui rounded image" src="./image/wechat.jpg" alt="作者联系方式" style="width: 100px; margin: auto auto">
+      </div>
+      <div class="three wide column">
+        <div class="ui header inverted">最新博客</div>
+        <div class="ui link list inverted">
+          <a href="#" class="item">用户故事</a>
+          <a href="#" class="item">用户故事</a>
+          <a href="#" class="item">用户故事</a>
+        </div>
+      </div>
+      <div class="three wide column">
+        <div class="ui header inverted">联系我</div>
+        <div class="ui link list inverted">
+          <a href="#" class="item">zebinbit@outlook.com</a>
+        </div>
+      </div>
+      <div class="seven wide column">
+        <div class="ui header inverted">黄泽彬的博客</div>
+        <p>这是我的个人博客，会分享生活、学习上的有趣的事情和总结，希望可以给来到这里的读者有所帮助...</p>
+      </div>
+    </div>
+    <div class="ui section divider"></div>
+    <p>Copyright © 2020 &nbsp; 黄泽彬 &nbsp; Designed by Huang Zebin</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>  <!--semantic-ui依赖jquery-->
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>  <!--引入semantic-ui的CDN-->
+
+<script>
+  $('body > nav > div > a').click(function () {
+    console.log("oo");
+    $('body > nav > div > div > div > a').toggleClass('m-mobile-hide');
+    $('body > nav > div > div > div > div').toggleClass('m-mobile-hide');
+  });
+</script>
+
+</body>
+</html>

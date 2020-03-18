@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  <!--移动端预览设置-->
+  <title>首页</title>
+  <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">  &lt;!&ndash;引入semantic-ui的CDN&ndash;&gt;-->
+  <link rel="stylesheet" href="Semantic-UI/semantic.css">
+  <link rel="stylesheet" href="./css/me.css">
+</head>
+<body>
+
+<!--首页导航条-->
+<nav>
+  <div class="ui inverted segment attached m-padded-tb-mini">  <!--attached取消边框圆角-->
+    <div class="ui container">
+      <div class="ui menu inverted secondary stackable">  <!--stackable可堆叠，可以自适应；mobile reversed下面的文章中，文字跟图片换位置-->
+        <h2 class="ui item header orange">黄泽彬的博客</h2>
+        <a href="#" class="m-item item m-mobile-hide"><i class="home icon"></i>首页</a>
+        <a href="#" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
+        <a href="#" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
+        <a href="#" class="m-item item m-mobile-hide"><i class="clone icon"></i>归档</a>
+        <a href="#" class="m-item item m-mobile-hide"><i class="info icon"></i>关于我</a>
+
+        <div class="m-item item right m-mobile-hide">
+          <div class="ui icon input">
+            <input type="text" placeholder="输入搜索内容......">
+            <i class="search icon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="ui black button m-right-top m-mobile-show menu toggle">
+      <i class="sidebar icon"></i>
+    </a>
+  </div>
+</nav>
+
+<!--首页中间内容部分-->
+<div class="m-padded-tb-massive">
+  <div class="ui container">
+    <div class="ui top attached segment">
+      <!--头部-->
+      <div class="ui link list horizontal">
+        <div class="item">
+          <img class="ui image avatar" src="https://picsum.photos/100/100" alt="">
+          <div class="content"><a href="#" class="header">黄泽彬</a></div>
+        </div>
+        <div class="item">
+          <i class="calendar icon"></i> 2020-3-15
+        </div>
+        <div class="item">
+          <i class="eye icon"></i> 55
+        </div>
+      </div>
+    </div>
+    <div class="ui attached segment">
+      <!--图片区域-->
+      <img src="https://picsum.photos/800/450" alt="" class="ui rounded image centered aligned">  <!--pluid铺满-->
+    </div>
+    <div class="ui attached segment">
+      <!--内容-->
+      <div class="ui right aligned segment basic">  <!--basic去掉segment的边框-->
+        <div class="ui orange label">原创</div>
+      </div>
+      <h2 class="ui header center aligned">简单天气app简介</h2>
+
+      <div id="content" class="" style="margin: 0 2em">
+        <p>能够查询2500+市县地区的7天天气预报、实况天气、每3小时天气、生活指数。使用安卓原生开发，这里用的android studio开发工具。这一切的关于天气信息的功能，来源于api接口，我们可以去申请一个天气api接口，例如：和风天气等等。下面简单说一下实现流程。</p>
+      </div>
+
+      <!--标签-->
+      <div class="" style="margin: 4em 2em 2em">
+        <div class="ui label basic left pointing teal">方法论</div>
+      </div>
+      <!--打赏-->
+      <div class="ui basic segment center aligned">
+        <button class="ui button orange basic circular">打赏</button>
+      </div>
+    </div>
+    <div class="ui attached positive message">
+      <!--博客信息-->
+      <div class="ui grid middle aligned">
+        <div class="eleven wide column">
+          <ul class="ui list">
+            <li>作者：黄泽彬（联系作者）</li>
+            <li>发表时间：2020-03-16 20:11</li>
+            <li>版权声明：自由转载-非商用-非衍生-保持署名（创意共享3.0许可证）</li>
+            <li>公众号转载：请在文末添加作者公众号二维码</li>
+          </ul>
+        </div>
+        <div class="five wide column">
+          <img src="./image/wechat.jpg" alt="" class="ui image rounded center floated bordered" style="width: 110px">
+        </div>
+      </div>
+    </div>
+    <div class="ui bottom attached segment">
+      <!--留言区域列表-->
+      <div class="ui teal segment">
+        <div class="ui threaded comments">
+          <h3 class="ui dividing header">Comments</h3>
+          <div class="comment">
+            <a class="avatar">
+              <img src="./image/wechat.jpg">
+            </a>
+            <div class="content">
+              <a class="author">Matt</a>
+              <div class="metadata">
+                <span class="date">今天下午 5:42</span>
+              </div>
+              <div class="text">太赞了！ </div>
+              <div class="actions">
+                <a class="reply">Reply</a>
+              </div>
+            </div>
+          </div>
+          <div class="comment">
+            <a class="avatar">
+              <img src="./image/wechat.jpg">
+            </a>
+            <div class="content">
+              <a class="author">Elliot Fu</a>
+              <div class="metadata">
+                <span class="date">昨天上午12:30</span>
+              </div>
+              <div class="text">
+                <p>這對我的研究是非常有用.謝謝!</p>
+              </div>
+              <div class="actions">
+                <a class="reply">Reply</a>
+              </div>
+            </div>
+            <div class="comments">
+              <div class="comment">
+                <a class="avatar">
+                  <img src="./image/wechat.jpg">
+                </a>
+                <div class="content">
+                  <a class="author">Jenny Hess</a>
+                  <div class="metadata">
+                    <span class="date">刚刚</span>
+                  </div>
+                  <div class="text">艾略特你永远是多么正确 :) </div>
+                  <div class="actions">
+                    <a class="reply">Reply</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="comment">
+            <a class="avatar">
+              <img src="./image/wechat.jpg">
+            </a>
+            <div class="content">
+              <a class="author">Joe Henderson</a>
+              <div class="metadata">
+                <span class="date">5 天以前</span>
+              </div>
+              <div class="text">老兄，这太棒了。非常感谢。 </div>
+              <div class="actions">
+                <a class="reply">Reply</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ui form">
+        <div class="field">
+          <textarea name="context" id="" placeholder="请输入你的评论"></textarea>
+        </div>
+        <div class="fields">
+          <div class="field m-mobile-wide m-margin-bottom-small">
+            <div class="ui left icon input">
+              <i class="ui user icon"></i>
+              <input type="text" name="nickname" placeholder="姓名">
+            </div>
+          </div>
+          <div class="field m-mobile-wide m-margin-bottom-small">
+            <div class="ui left icon input">
+              <i class="ui mail icon"></i>
+              <input type="text" name="email" placeholder="邮箱">
+            </div>
+          </div>
+          <div class="field m-mobile-wide m-margin-bottom-small">
+            <button class="ui teal m-mobile-wide button"><i class="ui edit"></i>发布</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--首页底部footer-->
+<footer class="ui segment inverted attached m-padded-tb-massive">
+  <div class="ui container center aligned">  <!--center aligned div中的内容居中-->
+    <div class="ui grid inverted divided stackable">  <!--inverted divided 反色分割线-->
+      <div class="three wide column">
+        <img class="ui rounded image" src="./image/wechat.jpg" alt="作者联系方式" style="width: 100px; margin: auto auto">
+      </div>
+      <div class="three wide column">
+        <div class="ui header inverted">最新博客</div>
+        <div class="ui link list inverted">
+          <a href="#" class="item">用户故事</a>
+          <a href="#" class="item">用户故事</a>
+          <a href="#" class="item">用户故事</a>
+        </div>
+      </div>
+      <div class="three wide column">
+        <div class="ui header inverted">联系我</div>
+        <div class="ui link list inverted">
+          <a href="#" class="item">zebinbit@outlook.com</a>
+        </div>
+      </div>
+      <div class="seven wide column">
+        <div class="ui header inverted">黄泽彬的博客</div>
+        <p>这是我的个人博客，会分享生活、学习上的有趣的事情和总结，希望可以给来到这里的读者有所帮助...</p>
+      </div>
+    </div>
+    <div class="ui section divider"></div>
+    <p>Copyright © 2020 &nbsp; 黄泽彬 &nbsp; Designed by Huang Zebin</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>  <!--semantic-ui依赖jquery-->
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>  <!--引入semantic-ui的CDN-->
+
+<script>
+  $('body > nav > div > a').click(function () {
+    console.log("oo");
+    $('body > nav > div > div > div > a').toggleClass('m-mobile-hide');
+    $('body > nav > div > div > div > div').toggleClass('m-mobile-hide');
+  });
+</script>
+
+</body>
+</html>
