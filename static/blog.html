@@ -7,6 +7,8 @@
   <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">  &lt;!&ndash;引入semantic-ui的CDN&ndash;&gt;-->
   <link rel="stylesheet" href="Semantic-UI/semantic.css">
   <link rel="stylesheet" href="./css/me.css">
+  <link rel="stylesheet" href="./css/typocss/typo.css">  <!--引入typo css-->
+  <link rel="stylesheet" href="./lib/prismjs/prism.css">  <!--引入代码高亮css-->
 </head>
 <body>
 
@@ -65,8 +67,27 @@
       </div>
       <h2 class="ui header center aligned">简单天气app简介</h2>
 
-      <div id="content" class="" style="margin: 0 2em">
+      <div id="content" class="typo typo-selection" style="margin: 0 2em">  <!--typo typo-selection 使用typo样式-->
         <p>能够查询2500+市县地区的7天天气预报、实况天气、每3小时天气、生活指数。使用安卓原生开发，这里用的android studio开发工具。这一切的关于天气信息的功能，来源于api接口，我们可以去申请一个天气api接口，例如：和风天气等等。下面简单说一下实现流程。</p>
+<pre>
+  <code class="language-css">
+/* 标题应该更贴紧内容，并与其他块区分，margin 值要相应做优化 */
+h1,h2,h3,h4,h5,h6 {
+    line-height:1;font-family:Arial,sans-serif;margin:1.4em 0 0.8em;
+}
+h1{font-size:1.8em;}
+h2{font-size:1.6em;}
+h3{font-size:1.4em;}
+h4{font-size:1.2em;}
+h5,h6{font-size:1em;}
+
+/* 现代排版：保证块/段落之间的空白隔行 */
+.typo p, .typo pre, .typo ul, .typo ol, .typo dl, .typo form, .typo hr {
+    margin:1em 0 0.6em;
+}
+  </code>
+</pre>
+        <pre><code class="language-css">p { color: red }</code></pre>
       </div>
 
       <!--标签-->
@@ -224,6 +245,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>  <!--semantic-ui依赖jquery-->
 <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>  <!--引入semantic-ui的CDN-->
+<script src="./lib/prismjs/prism.js"></script>  <!--引入代码高亮js-->
 
 <script>
   $('body > nav > div > a').click(function () {
